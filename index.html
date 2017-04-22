@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hiragana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="hiragana.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+</head>
+<body>
+
+<header class="w3-container topic">Learning Hiragana</header>
+<h1 class="w3-container second">Mouse down to see the prononciation!!</h1>
+<div class="w3-row grid">
+	<div class="w3-col m1">
+		<p style="color:white">x</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="a" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">あ</p>
+		<p id="i" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">い</p>
+		<p id="u" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">う</p>
+		<p id="e" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">え</p>
+		<p id="o" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">お</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ka" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">か</p>
+		<p id="ki" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">き</p>
+		<p id="ku" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">く</p>
+		<p id="ke" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">け</p>
+		<p id="ko" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">こ</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="sa" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">さ</p>
+		<p id="shi" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">し</p>
+		<p id="su" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">す</p>
+		<p id="se" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">せ</p>
+		<p id="so" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">そ</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ta" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">た</p>
+		<p id="chi" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ち</p>
+		<p id="tsu" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">つ</p>
+		<p id="te" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">て</p>
+		<p id="to" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">と</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="na" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">な</p>
+		<p id="ni" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">に</p>
+		<p id="nu" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ぬ</p>
+		<p id="ne" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ね</p>
+		<p id="no" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">の</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ha" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">は</p>
+		<p id="hi" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ひ</p>
+		<p id="fu" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ふ</p>
+		<p id="he" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">へ</p>
+		<p id="ho" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ほ</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ma" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ま</p>
+		<p id="mi" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">み</p>
+		<p id="mu" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">む</p>
+		<p id="me" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">め</p>
+		<p id="mo" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">も</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ya" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">や</p>
+		<p style="color:white">x</p>
+		<p id="yu" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ゆ</p>
+		<p style="color:white">x</p>
+		<p id="yo" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">よ</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="ra" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ら</p>
+		<p id="ri" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">り</p>
+		<p id="ru" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">る</p>
+		<p id="re" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">れ</p>
+		<p id="ro" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ろ</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="wa" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">わ</p>
+		<p style="color:white">x</p>
+		<p style="color:white">x</p>
+		<p style="color:white">x</p>
+		<p id="wo" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">を</p>
+	</div>
+	<div class="w3-col m1">
+		<p id="n" class="c" onmousedown="changeToEng(this)" onmouseup="changeToHira(this)">ん</p>
+		<p id="demo"></p>		
+	</div>
+</div>
+
+<p class="w3-container third"><a href="Q1.html">Take a Quiz!!</a></p>
+
+<footer class="w3-container final">
+	<p>Thank you for learning.</p>
+	<p>Powered by Todd (2017)</p>
+</footer>
+
+<script>
+var hira = ["あ",　"い",　"う",　"え",　"お",　"か",　"き",　"く",　"け",　"こ",　"さ",　"し",　"す",　"せ",　"そ",　"た",　"ち",　"つ",　"て",　"と",　"な",　"に",　"ぬ",　"ね",　"の",　"は",　"ひ",　"ふ",　"へ",　"ほ",　"ま",　"み",　"む",　"め",　"も",　"や",　"ゆ",　"よ",　"ら",　"り",　"る",　"れ",　"ろ",　"わ",　"を",　"ん"];
+var eng = ["a",　"i",　"u",　"e",　"o",　"ka",　"ki",　"ku",　"ke",　"ko",　"sa",　"shi",　"su",　"se",　"so",　"ta",　"chi",　"tsu",　"te",　"to",　"na",　"ni",　"nu",　"ne",　"no",　"ha",　"hi",　"fu",　"he",　"ho",　"ma",　"mi",　"mu",　"me",　"mo",　"ya",　"yu",　"yo",　"ra",　"ri",　"ru",　"re",　"ro",　"wa",　"wo",　"n"];
+
+function changeToEng(id) {
+    var i = id.innerHTML;
+    var c = "string";
+    for(let x=0; x<46; x++){
+    	if(hira[x]==i){
+    		c=eng[x];
+    	}
+    }
+    document.getElementById(c).innerHTML=c;
+}
+
+function changeToHira(id) {
+    var i = id.innerHTML;
+    var c = "string";
+    for(let x=0; x<46; x++){
+    	if(eng[x]==i){
+    		c=hira[x];
+    	}
+    }
+    document.getElementById(i).innerHTML=c;
+}
+
+</script>
+
+</body>
+</html>
