@@ -1,0 +1,48 @@
+.topic{
+	font-size: 54px;
+	text-align: center;
+	background-color: gray;
+	padding: 30px;
+}
+
+.second{
+	font-size: 42px;
+	text-align: center;
+	background-color: lime;
+	padding: 12px;
+	margin:0px;
+}
+
+.third{
+	font-size: 30px;
+	text-align: center;
+	background-color: red;
+	padding: 12px;
+	margin:0px;
+}
+
+.grid{
+	font-size: 36px;
+	text-align: center;
+}
+
+.final{
+	font-size: 20px;
+	text-align: center;
+	background-color: cyan;
+	padding: 10px;
+}
+
+.c:hover {
+    color: red;
+    background-color: blue;   
+}
+
+.c:active {
+    color: green;
+    background-color: black;   
+}
+
+a:link {
+    text-decoration: none;
+}

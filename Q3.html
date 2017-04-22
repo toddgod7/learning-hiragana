@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Question.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+</head>
+<body>
+
+<header class="w3-container topic">Learning Hiragana</header>
+
+<h1 id="question" class="w3-container question" onclick="generateQandA()" >Click to generate question</h1>
+
+<div class="w3-container answer">
+	<div class="w3-half">
+		<p id="a1" class="c" onclick="checkanswer(this)"></p>
+		<p id="a2" class="c" onclick="checkanswer(this)"></p>
+	</div>
+	<div class="w3-half">
+		<p id="a3" class="c" onclick="checkanswer(this)"></p>
+		<p id="a4" class="c" onclick="checkanswer(this)"></p>
+	</div>
+
+</div>
+
+<p class="w3-container third"><a href="hiragana.html">Go back and study again.</a></p>
+
+<p class="w3-container next c" onclick="next(this)" id="ne"><a href="Q4.html">next</a></p>
+
+<footer class="w3-container final">
+	<p>Thank you for learning.</p>
+	<p>Powered by Todd (2017)</p>
+</footer>
+
+<script>
+
+var hira = ["あ",　"い",　"う",　"え",　"お",　"か",　"き",　"く",　"け",　"こ",　"さ",　"し",　"す",　"せ",　"そ",　"た",　"ち",　"つ",　"て",　"と",　"な",　"に",　"ぬ",　"ね",　"の",　"は",　"ひ",　"ふ",　"へ",　"ほ",　"ま",　"み",　"む",　"め",　"も",　"や",　"ゆ",　"よ",　"ら",　"り",　"る",　"れ",　"ろ",　"わ",　"を",　"ん"];
+var eng = ["a",　"i",　"u",　"e",　"o",　"ka",　"ki",　"ku",　"ke",　"ko",　"sa",　"shi",　"su",　"se",　"so",　"ta",　"chi",　"tsu",　"te",　"to",　"na",　"ni",　"nu",　"ne",　"no",　"ha",　"hi",　"fu",　"he",　"ho",　"ma",　"mi",　"mu",　"me",　"mo",　"ya",　"yu",　"yo",　"ra",　"ri",　"ru",　"re",　"ro",　"wa",　"wo",　"n"];
+
+var answerid = ["a1", "a2", "a3", "a4"];
+
+var a=0;
+var check=0;
+var nn=0;
+
+function generateQandA() {
+	if(a==0){
+		a++;
+		var i = Math.floor(Math.random() * 46);
+		check=i;
+    	document.getElementById("question").innerHTML="Q3: " + hira[i];
+    	var ans = Math.floor(Math.random() * 4);
+		document.getElementById(answerid[ans]).innerHTML = eng[i];
+		for(let k=0; k<4; k++){
+			if(k!=ans){
+				var m = random();
+				if(m!=i){
+					document.getElementById(answerid[k]).innerHTML= eng[m];
+				}else{
+					document.getElementById(answerid[k]).innerHTML= eng[m+1];
+				}		
+			}		
+		}
+    	
+	}  
+}
+
+function checkanswer(id){
+	var i = id.innerHTML;
+	if(i==eng[check]){
+		alert("yes");
+		nn++;	
+		document.getElementById("ne").style.opacity=1;
+	}else{
+		alert("Are you idiot?");
+	}
+}
+
+function next(id){
+	if(nn==0){
+		alert("Don't cheat.");
+	}
+}
+
+function random(){
+	return Math.floor(Math.random() * 46);
+}
+
+
+
+</script>
+
+</body>
+</html>
